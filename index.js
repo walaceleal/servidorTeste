@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/',(req, res)=>{
-    res.json({status: 'ok'});
+    res.json({status: Math.random()});
 });
 
 app.listen(80, ()=>{
